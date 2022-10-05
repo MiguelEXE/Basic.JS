@@ -1,0 +1,21 @@
+{
+  "name": "basic.js",
+  "version": "1.0.0",
+  "main": "parser.js",
+  "license": "MIT",
+  "bin": "interpreter.js",
+  "author": {
+    "name": "TeamCM",
+    "url": "https://github.com/TeamCM"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.0"
+  },
+  "optionalDependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "scripts": {
+    "build": "pkg . --targets node16-win-x64,node16-linux-x64 --out-path build"
+  },
+  "homepage": "https://github.com/TeamCM/Basic.JS"
+}
