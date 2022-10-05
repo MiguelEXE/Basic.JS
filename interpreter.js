@@ -58,7 +58,7 @@ function toCode(str){
 }
 const instructions = {
     LET(args){
-        variables[args[0]] = args[1];
+        variables[args.key] = args.value;
     },
     GOTO(arg){
         lineNumber = arg;
@@ -70,6 +70,7 @@ const instructions = {
         clearInterval(interval);
         end?.();
         end = undefined;
+        console.log("READY.");
     },
     LIST(){
         for(const key in codeStr){

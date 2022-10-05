@@ -73,7 +73,7 @@ const keywordsParser = {
     LET(args){
         const [key,value] = args.split("=");
         const tkey = key.trim();
-        const tval = parseByType(value.trim());
+        const tval = parseByType(value.trim())[1];
         return {key: tkey, value: tval};
     },
     GOTO(args){
